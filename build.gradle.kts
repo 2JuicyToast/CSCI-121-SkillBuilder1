@@ -1,9 +1,9 @@
 plugins {
-    id 'java'
+    id("java")
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+group = "org.example"
+version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -15,6 +15,6 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
-test {
+tasks.test {
     useJUnitPlatform()
 }
